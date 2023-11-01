@@ -149,7 +149,9 @@ header nav ul {
     margin: 20px auto 40px;
 }
 
-
+#requiredField{
+    font-size: x-small;
+}
 
 /* posts */
 article {

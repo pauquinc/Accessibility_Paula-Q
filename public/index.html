@@ -68,16 +68,18 @@
                         <p>Contact us to learn more!</p>
                         <form action="/" method="post">
 
-                            <!-- Done -->
-                            <label for="full">Type your name</label>
+                            <!-- Done WCAG&ADOA and required field indicators -->
+                            <p id="requiredField">Fields marked with an * are required </p>
+                            <label for="full">Type your name*</label>
                             <input type="text" id="full" name="fullname" required />
 
                             <!-- Done -->
-                            <label for="mail">Type your mail</label>
+                            <label for="mail">Type your mail*</label>
                             <input id="mail" type="email" name="email" required />
 
+                            <!-- Done "Checkbox" role, ARIA attributes -->
                             <div class="flexbox">
-                                <span></span>
+                                <span id="check" role="checkbox" aria-required="true" aria-checked="false"></span>
                                 <label class="check">Check Me (required)</label>
                             </div>
 
